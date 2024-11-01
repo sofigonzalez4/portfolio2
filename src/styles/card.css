@@ -1,22 +1,21 @@
 /* CSS CARD */
 /* IMAGE */
-.image{
+.image {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image img{
+.image img {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    text-align: center;
     object-fit: cover;
     object-position: center;
 }
 
 /* CONTAINER */
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,55 +26,53 @@
 }
 
 /* CARD */
-.card-container{
+.card-container {
     display: flex;
     width: 650px;
-    height: auto;
-    background: linear-gradient(to right,#49022e, #a81267); /* #2FEBD4, #DEFFFD*/
+    background: linear-gradient(to right, #49022e, #a81267);
     border-radius: 12px;
-    box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, .15);
+    box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, 0.15);
 }
 
-.descripcion{
+.descripcion {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.image, .descripcion{
     padding: 30px;
     text-align: left;
     color: #FFFFFF;
 }
 
-.descripcion h2{
+.descripcion h1 {
+    font-weight: 400;
+}
+
+.descripcion h2 {
     line-height: 2;
     font-weight: 500;
     font-size: medium;
 }
 
-.descripcion p{
+.descripcion p {
     font-weight: 300;
     font-size: 17px;
 }
 
-.descripcion h1{
-    font-weight: 400;
-}
-
 /* ICONS */
-.descripcion .icons{
+.descripcion .icons {
     margin-top: 30px;
 }
-.descripcion .icons a{
+
+.descripcion .icons a {
     display: inline-block;
-    margin: 0 30px 0 30px;
+    margin: 0 30px;
     color: #FFFFFF;
     font-size: 30px;
-    transition: .3s;
+    transition: 0.3s;
 }
-a:hover{
+
+a:hover {
     transform: translateY(-3px) scale(1.05);
 }
 
@@ -90,13 +87,18 @@ a:hover{
     font-size: 12px;
     background-color: #192733;
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
 }
+
 #fade {
     opacity: 0;
     transition: opacity 0.3s;
 }
-.hover-text:hover #fade { opacity: 1; }
+
+.hover-text:hover #fade {
+    opacity: 1;
+}
+
 .hover-text {
     position: relative;
     display: inline-block;
@@ -107,61 +109,46 @@ a:hover{
 }
 
 /* RESPONSIVE */
-@media (max-width: 576px){
-    .container{
-        height: 100vh;
+@media (max-width: 576px) {
+    .container {
+        height: auto;
         padding: 0 15px;
     }
-    .card-container{
-        display: flex;
+    .card-container {
         flex-direction: column-reverse;
         background: linear-gradient(#a8126c, #490234);
-        width: 750px;
+        width: 100%; /* Ajuste para ser más responsivo */
         margin-top: 12px;
         margin-bottom: 12px;
     }
-    .image img{
+    .image img {
         width: 90px;
         height: 90px;
     }
-    .image{
-        padding: 15px 0 0 0;
+    .descripcion {
+        padding: 10px 20px;
     }
-    .descripcion{
-        padding: 10px 20px 18px 20px;
-    }
-    .descripcion h1{
-        font-weight: 400;
+    .descripcion h1 {
         font-size: 25px;
     }
-    .descripcion h2{
-        line-height: 2;
-        font-weight: 500;
+    .descripcion h2 {
         font-size: 17px;
     }
-    .descripcion p{
-        font-weight: 300;
+    .descripcion p {
         font-size: 15px;
     }
-    .descripcion .icons{
-        margin-top: 18px;
-    }
 }
-@media (min-width: 320px){
-    .icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-}
+
+/* Body and Form Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
+
 form {
     margin-top: 20px;
 }
+
 input, textarea {
     width: 100%;
     margin-bottom: 10px;
@@ -169,6 +156,7 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 button {
     padding: 10px 20px;
     background-color: #28a745;
@@ -177,3 +165,4 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
