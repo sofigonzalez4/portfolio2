@@ -31,7 +31,7 @@
     display: flex;
     width: 650px;
     height: auto;
-    background: linear-gradient(to right,#024945, #12a89c); /* #2FEBD4, #DEFFFD*/
+    background: linear-gradient(to right,#49022e, #a81267); /* #2FEBD4, #DEFFFD*/
     border-radius: 12px;
     box-shadow: 1px 7px 10px 2px rgba(0, 0, 0, .15);
 }
@@ -115,7 +115,7 @@ a:hover{
     .card-container{
         display: flex;
         flex-direction: column-reverse;
-        background: linear-gradient(#12a89c, #024945);
+        background: linear-gradient(#a8126c, #490234);
         width: 750px;
         margin-top: 12px;
         margin-bottom: 12px;
