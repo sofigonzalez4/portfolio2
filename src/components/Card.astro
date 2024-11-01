@@ -1,6 +1,6 @@
 ---
 //src/components/Card.astro
-const {name, position, aboutMe, linkedin, github, cvLink, profileImage } = Astro.props;
+const {name, position, aboutMe, Proyectos, github, cvLink, profileImage } = Astro.props;
 
 import '../styles/card.css';
 ---
@@ -36,4 +36,20 @@ import '../styles/card.css';
             <img src={profileImage} alt="">
         </div>
     </div>
-</div>
+        <form id="projectForm">
+        <input type="text" placeholder="APP PIZZERIA" required>
+        <textarea placeholder="Descripción del Proyecto" required></textarea>
+        <input type="url" placeholder="https://github.com/sofigonzalez4/tpPizzeria.git" required>
+        <input type="file" accept="image/*" required>
+
+                <form id="projectForm">
+        <input type="text" placeholder="APP CONTROL DENGUE" required>
+        <textarea placeholder="Descripción del Proyecto" required></textarea>
+        <input type="url" placeholder="https://github.com/sofigonzalez4/PaginaDengue.git" required>
+        <input type="file" accept="image/*" required>
+        
+        <form id="projectForm">
+        <input type="text" placeholder="APP PORTAL DEPORTIVO" required>
+        <textarea placeholder="Descripción del Proyecto" required></textarea>
+        <input type="url" placeholder="https://github.com/sofigonzalez4/portalDeportivo.git" required>
+        <input type="file" accept="image/*" required>
